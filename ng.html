@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NG Spread Analysis - 2025-04-25</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: right;
+            border: 1px solid #ddd;
+        }
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+        }
+        td:first-child, th:first-child {
+            text-align: left;
+        }
+        .percentile-cell {
+            font-weight: 500;
+        }
+        .meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 30px;
+        }
+        .legend {
+            display: flex;
+            gap: 20px;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NG Spread Percentile Analysis</h1>
+        <p>As of: <strong>2025-04-25</strong></p>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background: #33c850;"></div>
+                <span>Low (Cheap)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #ffc800;"></div>
+                <span>Mid</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #ff2700;"></div>
+                <span>High (Expensive)</span>
+            </div>
+        </div>
+
+        <h2>Calendar Spread Percentiles</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Spread</th>
+                    <th>Current</th>
+                    <th>1Y %ile</th>
+                    <th>5Y %ile</th>
+                    <th>10Y %ile</th>
+                    <th>All %ile</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>M2-M1</td>
+                    <td>0.1770</td>
+                    <td class="percentile-cell" style="background: #ff8000;">68.0</td>
+                    <td class="percentile-cell" style="background: #ff5900;">77.5</td>
+                    <td class="percentile-cell" style="background: #ff3900;">85.6</td>
+                    <td class="percentile-cell" style="background: #ff2e00;">88.3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Spread Statistics (All-Time)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Spread</th>
+                    <th>Min</th>
+                    <th>Max</th>
+                    <th>Mean</th>
+                    <th>Std Dev</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>M2-M1</td>
+                    <td>-1.208</td>
+                    <td>0.875</td>
+                    <td>0.0562</td>
+                    <td>0.1407</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>12-Month Spread Percentiles</h2>
+        <p style="color: #666; font-size: 0.9em;">Spreads between contracts 12 months apart (M13-M1, M14-M2, etc.)</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Spread</th>
+                    <th>Current</th>
+                    <th>1Y %ile</th>
+                    <th>5Y %ile</th>
+                    <th>10Y %ile</th>
+                    <th>All %ile</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <h2>12-Month Spread Statistics (All-Time)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Spread</th>
+                    <th>Min</th>
+                    <th>Max</th>
+                    <th>Mean</th>
+                    <th>Std Dev</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <p class="meta">Generated: 2026-03-06 14:53</p>
+    </div>
+</body>
+</html>
