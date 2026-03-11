@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CL Spread Analysis - 2026-03-09</title>
+    <title>Futures Spread Analysis - 2026-03-09</title>
     <style>
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             margin: 0;
@@ -77,11 +78,52 @@
         @media (max-width: 768px) {
             .grid { grid-template-columns: 1fr; }
         }
+        /* Tab styles */
+        .tab-nav {
+            display: flex;
+            gap: 4px;
+            border-bottom: 2px solid #007bff;
+            margin-bottom: 24px;
+        }
+        .tab-btn {
+            padding: 10px 24px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            border-bottom: none;
+            background: #f8f9fa;
+            font-size: 1em;
+            border-radius: 6px 6px 0 0;
+            color: #555;
+            transition: background 0.15s;
+        }
+        .tab-btn:hover {
+            background: #e9ecef;
+        }
+        .tab-btn.active {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>CL Spread Percentile Analysis</h1>
+        <h1>Futures Spread Analysis</h1>
+        <div class="tab-nav">
+            <button class="tab-btn active" data-tab="CL" onclick="showTab('CL', this)">CL — WTI Crude Oil</button>
+            <button class="tab-btn" data-tab="NG" onclick="showTab('NG', this)">NG — Natural Gas</button>
+        </div>
+
+        <div id="tab-CL" class="tab-content active">
+
+        <h2>WTI Crude Oil Spread Percentile Analysis</h2>
         <p>As of: <strong>2026-03-09</strong></p>
 
         <div class="legend">
@@ -99,7 +141,8 @@
             </div>
         </div>
 
-        <h2>Calendar Spread Percentiles</h2>
+        <h3>Calendar Spread Percentiles</h3>
+
         <table>
             <thead>
                 <tr>
@@ -211,7 +254,6 @@
             </tbody>
         </table>
 
-        <h2>Spread Statistics (All-Time)</h2>
         <table>
             <thead>
                 <tr>
@@ -310,8 +352,9 @@
             </tbody>
         </table>
 
-        <h2>12-Month Spread Percentiles</h2>
+        <h3>12-Month Spread Percentiles</h3>
         <p style="color: #666; font-size: 0.9em;">Spreads between contracts 12 months apart (M13-M1, M14-M2, etc.)</p>
+
         <table>
             <thead>
                 <tr>
@@ -423,7 +466,6 @@
             </tbody>
         </table>
 
-        <h2>12-Month Spread Statistics (All-Time)</h2>
         <table>
             <thead>
                 <tr>
@@ -522,7 +564,322 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-03-10 14:00</p>
+        <p class="meta">Generated: 2026-03-10 20:22</p>
+
+        </div>
+        <div id="tab-NG" class="tab-content">
+
+        <h2>Natural Gas Spread Percentile Analysis</h2>
+        <p>As of: <strong>2026-03-09</strong></p>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background: #33c850;"></div>
+                <span>Low (Cheap)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #ffc800;"></div>
+                <span>Mid</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #ff2700;"></div>
+                <span>High (Expensive)</span>
+            </div>
+        </div>
+
+        <h3>Calendar Spread Percentiles</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Spread</th>
+                    <th>Current</th>
+                    <th>1Y %ile</th>
+                    <th>5Y %ile</th>
+                    <th>10Y %ile</th>
+                    <th>All %ile</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>M2-M1</td>
+                    <td>0.0080</td>
+                    <td class="percentile-cell" style="background: #7dc832;">24.6</td>
+                    <td class="percentile-cell" style="background: #95c829;">29.3</td>
+                    <td class="percentile-cell" style="background: #96c829;">29.5</td>
+                    <td class="percentile-cell" style="background: #68c83b;">20.5</td>
+                </tr>
+                <tr>
+                    <td>M3-M2</td>
+                    <td>0.1510</td>
+                    <td class="percentile-cell" style="background: #ffa400;">58.9</td>
+                    <td class="percentile-cell" style="background: #ff7000;">71.8</td>
+                    <td class="percentile-cell" style="background: #ff4a00;">81.3</td>
+                    <td class="percentile-cell" style="background: #ff5500;">78.6</td>
+                </tr>
+                <tr>
+                    <td>M4-M3</td>
+                    <td>0.2630</td>
+                    <td class="percentile-cell" style="background: #ff7400;">71.0</td>
+                    <td class="percentile-cell" style="background: #ff3e00;">84.3</td>
+                    <td class="percentile-cell" style="background: #ff2600;">90.4</td>
+                    <td class="percentile-cell" style="background: #ff2b00;">89.0</td>
+                </tr>
+                <tr>
+                    <td>M5-M4</td>
+                    <td>0.0890</td>
+                    <td class="percentile-cell" style="background: #ffa400;">58.9</td>
+                    <td class="percentile-cell" style="background: #ff8c00;">64.9</td>
+                    <td class="percentile-cell" style="background: #ff6f00;">72.2</td>
+                    <td class="percentile-cell" style="background: #ff7600;">70.5</td>
+                </tr>
+                <tr>
+                    <td>M6-M5</td>
+                    <td>-0.0170</td>
+                    <td class="percentile-cell" style="background: #a0c825;">31.5</td>
+                    <td class="percentile-cell" style="background: #acc820;">33.8</td>
+                    <td class="percentile-cell" style="background: #9bc827;">30.4</td>
+                    <td class="percentile-cell" style="background: #79c834;">23.9</td>
+                </tr>
+                <tr>
+                    <td>M7-M6</td>
+                    <td>0.0600</td>
+                    <td class="percentile-cell" style="background: #ffc100;">51.6</td>
+                    <td class="percentile-cell" style="background: #ffb000;">56.0</td>
+                    <td class="percentile-cell" style="background: #ff8600;">66.4</td>
+                    <td class="percentile-cell" style="background: #ff8f00;">64.2</td>
+                </tr>
+                <tr>
+                    <td>M8-M7</td>
+                    <td>0.2680</td>
+                    <td class="percentile-cell" style="background: #ff5400;">79.0</td>
+                    <td class="percentile-cell" style="background: #ff2d00;">88.7</td>
+                    <td class="percentile-cell" style="background: #ff1c00;">92.9</td>
+                    <td class="percentile-cell" style="background: #ff2600;">90.3</td>
+                </tr>
+                <tr>
+                    <td>M9-M8</td>
+                    <td>0.7610</td>
+                    <td class="percentile-cell" style="background: #ff0300;">99.2</td>
+                    <td class="percentile-cell" style="background: #ff0000;">99.8</td>
+                    <td class="percentile-cell" style="background: #ff0000;">99.9</td>
+                    <td class="percentile-cell" style="background: #ff0300;">99.1</td>
+                </tr>
+                <tr>
+                    <td>M10-M9</td>
+                    <td>0.3800</td>
+                    <td class="percentile-cell" style="background: #ff2500;">90.7</td>
+                    <td class="percentile-cell" style="background: #ff1c00;">93.0</td>
+                    <td class="percentile-cell" style="background: #ff0d00;">96.5</td>
+                    <td class="percentile-cell" style="background: #ff1100;">95.7</td>
+                </tr>
+                <tr>
+                    <td>M11-M10</td>
+                    <td>-0.5380</td>
+                    <td class="percentile-cell" style="background: #18c85a;">4.8</td>
+                    <td class="percentile-cell" style="background: #15c85b;">4.2</td>
+                    <td class="percentile-cell" style="background: #0cc85f;">2.5</td>
+                    <td class="percentile-cell" style="background: #0ec85e;">2.9</td>
+                </tr>
+                <tr>
+                    <td>M12-M11</td>
+                    <td>-0.9780</td>
+                    <td class="percentile-cell" style="background: #02c863;">0.4</td>
+                    <td class="percentile-cell" style="background: #08c860;">1.7</td>
+                    <td class="percentile-cell" style="background: #04c862;">0.8</td>
+                    <td class="percentile-cell" style="background: #09c860;">1.9</td>
+                </tr>
+                <tr>
+                    <td>M13-M12</td>
+                    <td>-0.3350</td>
+                    <td class="percentile-cell" style="background: #73c836;">22.6</td>
+                    <td class="percentile-cell" style="background: #4ac846;">14.6</td>
+                    <td class="percentile-cell" style="background: #2ec851;">9.1</td>
+                    <td class="percentile-cell" style="background: #21c857;">6.5</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Spread</th>
+                    <th>Min</th>
+                    <th>Max</th>
+                    <th>Mean</th>
+                    <th>Std Dev</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>M2-M1</td>
+                    <td>-3.134</td>
+                    <td>2.18</td>
+                    <td>0.1018</td>
+                    <td>0.2315</td>
+                </tr>
+                <tr>
+                    <td>M3-M2</td>
+                    <td>-1.3</td>
+                    <td>2.18</td>
+                    <td>0.1003</td>
+                    <td>0.2277</td>
+                </tr>
+                <tr>
+                    <td>M4-M3</td>
+                    <td>-3.8</td>
+                    <td>1.595</td>
+                    <td>0.0729</td>
+                    <td>0.2854</td>
+                </tr>
+                <tr>
+                    <td>M5-M4</td>
+                    <td>-2.65</td>
+                    <td>1.62</td>
+                    <td>0.0548</td>
+                    <td>0.272</td>
+                </tr>
+                <tr>
+                    <td>M6-M5</td>
+                    <td>-3.425</td>
+                    <td>1.495</td>
+                    <td>0.0378</td>
+                    <td>0.3125</td>
+                </tr>
+                <tr>
+                    <td>M7-M6</td>
+                    <td>-2.625</td>
+                    <td>1.45</td>
+                    <td>0.0281</td>
+                    <td>0.3114</td>
+                </tr>
+                <tr>
+                    <td>M8-M7</td>
+                    <td>-2.61</td>
+                    <td>1.355</td>
+                    <td>0.0219</td>
+                    <td>0.3029</td>
+                </tr>
+                <tr>
+                    <td>M9-M8</td>
+                    <td>-2.17</td>
+                    <td>1.09</td>
+                    <td>0.0186</td>
+                    <td>0.2721</td>
+                </tr>
+                <tr>
+                    <td>M10-M9</td>
+                    <td>-2.295</td>
+                    <td>1.0</td>
+                    <td>0.0032</td>
+                    <td>0.3065</td>
+                </tr>
+                <tr>
+                    <td>M11-M10</td>
+                    <td>-2.128</td>
+                    <td>0.81</td>
+                    <td>0.0007</td>
+                    <td>0.2916</td>
+                </tr>
+                <tr>
+                    <td>M12-M11</td>
+                    <td>-2.3</td>
+                    <td>0.615</td>
+                    <td>0.0011</td>
+                    <td>0.2791</td>
+                </tr>
+                <tr>
+                    <td>M13-M12</td>
+                    <td>-1.83</td>
+                    <td>0.585</td>
+                    <td>0.0018</td>
+                    <td>0.2667</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Jan-May (Winter-Spring) Spread Percentiles</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Spread</th>
+                    <th>Current</th>
+                    <th>1Y %ile</th>
+                    <th>5Y %ile</th>
+                    <th>10Y %ile</th>
+                    <th>All %ile</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jan27-May27</td>
+                    <td>1.8730</td>
+                    <td class="percentile-cell" style="background: #ff0800;">98.0</td>
+                    <td class="percentile-cell" style="background: #ff3700;">86.2</td>
+                    <td class="percentile-cell" style="background: #ff1c00;">92.9</td>
+                    <td class="percentile-cell" style="background: #ff2800;">89.8</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Spread</th>
+                    <th>Min</th>
+                    <th>Max</th>
+                    <th>Mean</th>
+                    <th>Std Dev</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jan27-May27</td>
+                    <td>-0.416</td>
+                    <td>4.69</td>
+                    <td>0.7229</td>
+                    <td>0.7893</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="meta">Generated: 2026-03-10 20:22</p>
+
+        </div>
+
     </div>
+
+    <script>
+        function showTab(id, el) {
+            document.querySelectorAll('.tab-content').forEach(function(t) {
+                t.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-btn').forEach(function(b) {
+                b.classList.remove('active');
+            });
+            document.getElementById('tab-' + id).classList.add('active');
+            el.classList.add('active');
+            window.location.hash = id;
+        }
+
+        // Activate tab from URL hash on load
+        (function() {
+            var hash = window.location.hash.slice(1);
+            var target = hash ? document.getElementById('tab-' + hash) : null;
+            if (target) {
+                document.querySelectorAll('.tab-content').forEach(function(t) {
+                    t.classList.remove('active');
+                });
+                document.querySelectorAll('.tab-btn').forEach(function(b) {
+                    b.classList.remove('active');
+                });
+                target.classList.add('active');
+                var btn = document.querySelector('.tab-btn[data-tab="' + hash + '"]');
+                if (btn) btn.classList.add('active');
+            }
+        })();
+    </script>
+
 </body>
 </html>
