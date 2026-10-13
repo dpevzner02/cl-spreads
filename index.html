@@ -118,7 +118,8 @@
     <div class="container">
         <h1>Futures Spread Analysis</h1>
         <div class="tab-nav">
-            <button class="tab-btn active" data-tab="CL" onclick="showTab('CL', this)">CL — WTI Crude Oil</button>
+            <button class="tab-btn active" data-tab="SUMMARY" onclick="showTab('SUMMARY', this)">📋 Daily Summary</button>
+            <button class="tab-btn" data-tab="CL" onclick="showTab('CL', this)">CL — WTI Crude Oil</button>
             <button class="tab-btn" data-tab="HO" onclick="showTab('HO', this)">HO — Heating Oil</button>
             <button class="tab-btn" data-tab="NG" onclick="showTab('NG', this)">NG — Natural Gas</button>
             <button class="tab-btn" data-tab="ZS" onclick="showTab('ZS', this)">ZS — Soybeans</button>
@@ -128,7 +129,13 @@
             <button class="tab-btn" data-tab="ALI" onclick="showTab('ALI', this)">ALI — Aluminum</button>
         </div>
 
-        <div id="tab-CL" class="tab-content active">
+        <div id="tab-SUMMARY" class="tab-content active">
+        <p>As of: <strong>2026-10-12</strong></p>
+        <p style="color:#666; font-size:0.92em; max-width:760px;">Day-over-day moves that rank in the top or bottom 2% of that <em>same series' own</em> trailing 5-year history of daily changes — so a move is flagged for being unusual for THAT price, spread, or vol series specifically, not against a fixed dollar threshold. A quiet day showing nothing below is expected, not a bug.</p>
+        <p style="margin-top:20px; padding:16px; background:#f8f9fa; border-radius:6px; color:#555;">No unusual moves today — nothing cleared the top/bottom 2% of its own 5-year history.</p>
+
+        </div>
+        <div id="tab-CL" class="tab-content">
 
         <h2>WTI Crude Oil Spread Percentile Analysis</h2>
         <p>As of: <strong>2026-10-12</strong></p>
@@ -546,7 +553,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-13 00:30</p>
+        <p class="meta">Generated: 2026-10-13 02:41</p>
 
         </div>
         <div id="tab-HO" class="tab-content">
@@ -735,7 +742,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-13 00:30</p>
+        <p class="meta">Generated: 2026-10-13 02:41</p>
 
         </div>
         <div id="tab-NG" class="tab-content">
@@ -1044,7 +1051,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-13 00:30</p>
+        <p class="meta">Generated: 2026-10-13 02:41</p>
 
         </div>
         <div id="tab-ZS" class="tab-content">
@@ -1275,7 +1282,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-13 00:30</p>
+        <p class="meta">Generated: 2026-10-13 02:41</p>
 
         </div>
         <div id="tab-ZL" class="tab-content">
@@ -1464,7 +1471,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-13 00:30</p>
+        <p class="meta">Generated: 2026-10-13 02:41</p>
 
         </div>
         <div id="tab-CT" class="tab-content">
@@ -1684,7 +1691,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-13 00:30</p>
+        <p class="meta">Generated: 2026-10-13 02:41</p>
 
         </div>
         <div id="tab-SB" class="tab-content">
@@ -1835,7 +1842,7 @@
         </table>
         <p style="color:#888; font-size:0.9em;">Implied volatility: N/A — no options data available for this commodity yet.</p>
 
-        <p class="meta">Generated: 2026-10-13 00:30</p>
+        <p class="meta">Generated: 2026-10-13 02:41</p>
 
         </div>
         <div id="tab-ALI" class="tab-content">
@@ -2096,7 +2103,7 @@
         </table>
         <p style="color:#888; font-size:0.9em;">Implied volatility: N/A — no options data available for this commodity yet.</p>
 
-        <p class="meta">Generated: 2026-10-13 00:30</p>
+        <p class="meta">Generated: 2026-10-13 02:41</p>
 
         </div>
 
