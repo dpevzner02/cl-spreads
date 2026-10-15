@@ -127,12 +127,22 @@
             <button class="tab-btn" data-tab="CT" onclick="showTab('CT', this)">CT — Cotton No. 2</button>
             <button class="tab-btn" data-tab="SB" onclick="showTab('SB', this)">SB — Sugar No. 11</button>
             <button class="tab-btn" data-tab="ALI" onclick="showTab('ALI', this)">ALI — Aluminum</button>
+            <button class="tab-btn" data-tab="HE" onclick="showTab('HE', this)">HE — Lean Hogs</button>
         </div>
 
         <div id="tab-SUMMARY" class="tab-content active">
         <p>As of: <strong>2026-10-14</strong></p>
         <p style="color:#666; font-size:0.92em; max-width:760px;">Day-over-day moves that rank in the top or bottom 2% of that <em>same series' own</em> trailing 5-year history of daily changes — so a move is flagged for being unusual for THAT price, spread, or vol series specifically, not against a fixed dollar threshold. A quiet day showing nothing below is expected, not a bug.</p>
-        <p style="margin-top:20px; padding:16px; background:#f8f9fa; border-radius:6px; color:#555;">No unusual moves today — nothing cleared the top/bottom 2% of its own 5-year history.</p>
+        <table>
+            <thead><tr><th>Commodity</th><th style="text-align:left;">Series</th><th>Current</th><th>Change</th><th>Direction</th><th>5Y Rank</th></tr></thead>
+            <tbody>
+                <tr><td>HE</td><td style="text-align:left;">HE Dec26-Feb27 spread</td><td>1.7750</td><td style="color:#28a745; font-weight:600;">+9.3500</td><td style="color:#28a745; font-weight:600;">▲</td><td class="percentile-cell" style="background:#ff0200;">99.4</td></tr>
+                <tr><td>HE</td><td style="text-align:left;">HE front-month price</td><td>66.08</td><td style="color:#dc3545; font-weight:600;">-12.60%</td><td style="color:#dc3545; font-weight:600;">▼</td><td class="percentile-cell" style="background:#03c862;">0.7</td></tr>
+                <tr><td>HE</td><td style="text-align:left;">HE Feb-Apr27 spread</td><td>5.2000</td><td style="color:#28a745; font-weight:600;">+3.6250</td><td style="color:#28a745; font-weight:600;">▲</td><td class="percentile-cell" style="background:#ff0400;">99.0</td></tr>
+                <tr><td>HE</td><td style="text-align:left;">HE Apr-May27 spread</td><td>5.6500</td><td style="color:#28a745; font-weight:600;">+1.1000</td><td style="color:#28a745; font-weight:600;">▲</td><td class="percentile-cell" style="background:#ff0600;">98.3</td></tr>
+            </tbody>
+        </table>
+        <p style="color:#999; font-size:0.85em; margin-top:16px;">4 move(s) flagged across price, front 3 calendar spreads, and implied vol for every tracked commodity.</p>
 
         </div>
         <div id="tab-CL" class="tab-content">
@@ -549,11 +559,11 @@
             <thead><tr><th>Implied Volatility</th><th>Current</th><th>1Y %ile</th><th>5Y %ile</th><th>All %ile</th><th>Min / Max / Median</th></tr></thead>
             <tbody>
                 <tr><td>ATM IV — CLZ6 (34 DTE)</td><td>45.33</td><td class="percentile-cell" style="background: #b8c81b;">36.2</td><td class="percentile-cell" style="background: #b8c81b;">36.2</td><td class="percentile-cell" style="background: #b8c81b;">36.2</td><td style="color:#555; font-size:0.85em;">40.91 / 53.16 / 46.79</td></tr>
-                <tr><td>CBOE Crude Oil Volatility (OVX)</td><td>48.77</td><td class="percentile-cell" style="background: #a9c821;">33.3</td><td class="percentile-cell" style="background: #ff7800;">70.0</td><td class="percentile-cell" style="background: #ff4a00;">81.5</td><td style="color:#555; font-size:0.85em;">15.61 / 170.55 / 36.20</td></tr>
+                <tr><td>CBOE Crude Oil Volatility (OVX)</td><td>48.77</td><td class="percentile-cell" style="background: #d4c810;">41.7</td><td class="percentile-cell" style="background: #ff7100;">71.7</td><td class="percentile-cell" style="background: #ff4800;">82.0</td><td style="color:#555; font-size:0.85em;">15.61 / 170.55 / 36.20</td></tr>
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-15 00:58</p>
+        <p class="meta">Generated: 2026-10-15 02:55</p>
 
         </div>
         <div id="tab-HO" class="tab-content">
@@ -742,7 +752,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-15 00:58</p>
+        <p class="meta">Generated: 2026-10-15 02:55</p>
 
         </div>
         <div id="tab-NG" class="tab-content">
@@ -1051,7 +1061,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-15 00:59</p>
+        <p class="meta">Generated: 2026-10-15 02:55</p>
 
         </div>
         <div id="tab-ZS" class="tab-content">
@@ -1282,7 +1292,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-15 00:59</p>
+        <p class="meta">Generated: 2026-10-15 02:55</p>
 
         </div>
         <div id="tab-ZL" class="tab-content">
@@ -1471,7 +1481,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-15 00:59</p>
+        <p class="meta">Generated: 2026-10-15 02:55</p>
 
         </div>
         <div id="tab-CT" class="tab-content">
@@ -1691,7 +1701,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-15 00:59</p>
+        <p class="meta">Generated: 2026-10-15 02:55</p>
 
         </div>
         <div id="tab-SB" class="tab-content">
@@ -1884,7 +1894,7 @@
         </table>
         <p style="color:#888; font-size:0.9em;">Implied volatility: N/A — no options data available for this commodity yet.</p>
 
-        <p class="meta">Generated: 2026-10-15 00:59</p>
+        <p class="meta">Generated: 2026-10-15 02:55</p>
 
         </div>
         <div id="tab-ALI" class="tab-content">
@@ -2145,7 +2155,136 @@
         </table>
         <p style="color:#888; font-size:0.9em;">Implied volatility: N/A — no options data available for this commodity yet.</p>
 
-        <p class="meta">Generated: 2026-10-15 00:59</p>
+        <p class="meta">Generated: 2026-10-15 02:55</p>
+
+        </div>
+        <div id="tab-HE" class="tab-content">
+
+        <h2>Lean Hogs Spread Percentile Analysis</h2>
+        <p>As of: <strong>2026-10-14</strong></p>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background: #33c850;"></div>
+                <span>Low (Cheap)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #ffc800;"></div>
+                <span>Mid</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #ff2700;"></div>
+                <span>High (Expensive)</span>
+            </div>
+        </div>
+
+
+        <h3>Calendar Spread Percentiles</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Spread</th>
+                    <th>Current</th>
+                    <th>1Y %ile</th>
+                    <th>5Y %ile</th>
+                    <th>10Y %ile</th>
+                    <th>All %ile</th>
+                    <th>Min / Max / Median</th>
+                    <th>Expiry/Notice</th>
+                    <th>Days</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dec26-Feb27</td>
+                    <td>1.7750</td>
+                    <td class="percentile-cell" style="background: #cfc812;">40.6</td>
+                    <td class="percentile-cell" style="background: #d3c811;">41.4</td>
+                    <td class="percentile-cell" style="background: #dbc80e;">43.0</td>
+                    <td class="percentile-cell" style="background: #ecc807;">46.4</td>
+                    <td style="color:#555; font-size:0.85em;">-25.8000 / 15.4500 / 2.4000</td>
+                    <td style="color:#555; font-size:0.9em;">14-Dec-26 <span title="Last trade date (expiry)" style="color:#888; font-weight:600;">E</span></td>
+                    <td style="color:#555;">61</td>
+                </tr>
+                <tr>
+                    <td>Feb-Apr27</td>
+                    <td>5.2000</td>
+                    <td class="percentile-cell" style="background: #ff4400;">82.9</td>
+                    <td class="percentile-cell" style="background: #ff7100;">71.7</td>
+                    <td class="percentile-cell" style="background: #ff8300;">67.2</td>
+                    <td class="percentile-cell" style="background: #ff6a00;">73.4</td>
+                    <td style="color:#555; font-size:0.85em;">-20.6750 / 12.4750 / 2.9500</td>
+                    <td style="color:#555; font-size:0.9em;">12-Feb-27 <span title="Last trade date (expiry)" style="color:#888; font-weight:600;">E</span></td>
+                    <td style="color:#555;">121</td>
+                </tr>
+                <tr>
+                    <td>Apr-May27</td>
+                    <td>5.6500</td>
+                    <td class="percentile-cell" style="background: #ff5200;">79.3</td>
+                    <td class="percentile-cell" style="background: #ff5300;">79.2</td>
+                    <td class="percentile-cell" style="background: #ff5700;">78.2</td>
+                    <td class="percentile-cell" style="background: #ff4100;">83.6</td>
+                    <td style="color:#555; font-size:0.85em;">-23.0750 / 9.5000 / 2.0750</td>
+                    <td style="color:#555; font-size:0.9em;">14-Apr-27 <span title="Last trade date (expiry)" style="color:#888; font-weight:600;">E</span></td>
+                    <td style="color:#555;">182</td>
+                </tr>
+                <tr>
+                    <td>May-Jun27</td>
+                    <td>8.9500</td>
+                    <td class="percentile-cell" style="background: #ff0000;">100.0</td>
+                    <td class="percentile-cell" style="background: #ff0000;">100.0</td>
+                    <td class="percentile-cell" style="background: #ff0000;">100.0</td>
+                    <td class="percentile-cell" style="background: #ff0100;">99.7</td>
+                    <td style="color:#555; font-size:0.85em;">-22.6000 / 9.6500 / 0.9500</td>
+                    <td style="color:#555; font-size:0.9em;">14-May-27 <span title="Last trade date (expiry)" style="color:#888; font-weight:600;">E</span></td>
+                    <td style="color:#555;">212</td>
+                </tr>
+                <tr>
+                    <td>Jun-Jul27</td>
+                    <td>2.4500</td>
+                    <td class="percentile-cell" style="background: #ffa800;">57.8</td>
+                    <td class="percentile-cell" style="background: #ffa200;">59.5</td>
+                    <td class="percentile-cell" style="background: #ffa000;">59.8</td>
+                    <td class="percentile-cell" style="background: #ff7d00;">68.7</td>
+                    <td style="color:#555; font-size:0.85em;">-28.8250 / 9.7500 / 0.0250</td>
+                    <td style="color:#555; font-size:0.9em;">14-Jun-27 <span title="Last trade date (expiry)" style="color:#888; font-weight:600;">E</span></td>
+                    <td style="color:#555;">243</td>
+                </tr>
+                <tr>
+                    <td>Jul-Aug27</td>
+                    <td>0.4000</td>
+                    <td class="percentile-cell" style="background: #ffc500;">50.6</td>
+                    <td class="percentile-cell" style="background: #ffaa00;">57.5</td>
+                    <td class="percentile-cell" style="background: #ff9c00;">60.9</td>
+                    <td class="percentile-cell" style="background: #ff8c00;">64.9</td>
+                    <td style="color:#555; font-size:0.85em;">-18.1750 / 8.7250 / -0.8500</td>
+                    <td style="color:#555; font-size:0.9em;">15-Jul-27 <span title="Last trade date (expiry)" style="color:#888; font-weight:600;">E</span></td>
+                    <td style="color:#555;">274</td>
+                </tr>
+                <tr>
+                    <td>Aug-Oct27</td>
+                    <td>-11.6250</td>
+                    <td class="percentile-cell" style="background: #51c844;">15.9</td>
+                    <td class="percentile-cell" style="background: #55c842;">16.7</td>
+                    <td class="percentile-cell" style="background: #47c847;">14.1</td>
+                    <td class="percentile-cell" style="background: #28c854;">8.0</td>
+                    <td style="color:#555; font-size:0.85em;">-18.4500 / 8.6000 / -0.8500</td>
+                    <td style="color:#555; font-size:0.9em;">13-Aug-27 <span title="Last trade date (expiry)" style="color:#888; font-weight:600;">E</span></td>
+                    <td style="color:#555;">303</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Outright Valuation &amp; Implied Volatility</h3>
+        <table>
+            <thead><tr><th>Contract</th><th>Price</th><th>1Y %ile</th><th>5Y %ile</th><th>All %ile</th><th>Min / Max / Median</th></tr></thead>
+            <tbody>
+                <tr><td>Dec26</td><td>66.08</td><td class="percentile-cell" style="background: #00c864;">0.0</td><td class="percentile-cell" style="background: #01c863;">0.2</td><td class="percentile-cell" style="background: #8dc82c;">27.7</td><td style="color:#555; font-size:0.85em;">37.33 / 133.38 / 76.38</td></tr>
+            </tbody>
+        </table>
+        <p style="color:#888; font-size:0.9em;">Implied volatility: N/A — no options data available for this commodity yet.</p>
+
+        <p class="meta">Generated: 2026-10-15 02:55</p>
 
         </div>
 
