@@ -122,6 +122,7 @@
             <button class="tab-btn" data-tab="CL" onclick="showTab('CL', this)">CL — WTI Crude Oil</button>
             <button class="tab-btn" data-tab="HO" onclick="showTab('HO', this)">HO — Heating Oil</button>
             <button class="tab-btn" data-tab="NG" onclick="showTab('NG', this)">NG — Natural Gas</button>
+            <button class="tab-btn" data-tab="ZC" onclick="showTab('ZC', this)">ZC — Corn</button>
             <button class="tab-btn" data-tab="ZS" onclick="showTab('ZS', this)">ZS — Soybeans</button>
             <button class="tab-btn" data-tab="ZL" onclick="showTab('ZL', this)">ZL — Soybean Oil</button>
             <button class="tab-btn" data-tab="CT" onclick="showTab('CT', this)">CT — Cotton No. 2</button>
@@ -557,11 +558,11 @@
             <thead><tr><th>Implied Volatility</th><th>Current</th><th>1Y %ile</th><th>5Y %ile</th><th>All %ile</th><th>Min / Max / Median</th></tr></thead>
             <tbody>
                 <tr><td>ATM IV — CLH7 (117 DTE)</td><td>45.53</td><td class="percentile-cell" style="background: #d9c80e;">42.6</td><td class="percentile-cell" style="background: #d9c80e;">42.6</td><td class="percentile-cell" style="background: #d9c80e;">42.6</td><td style="color:#555; font-size:0.85em;">39.37 / 53.16 / 46.22</td></tr>
-                <tr><td>CBOE Crude Oil Volatility (OVX)</td><td>60.02</td><td class="percentile-cell" style="background: #ff8500;">66.7</td><td class="percentile-cell" style="background: #ff2100;">91.7</td><td class="percentile-cell" style="background: #ff1b00;">93.1</td><td style="color:#555; font-size:0.85em;">15.61 / 170.55 / 36.20</td></tr>
+                <tr><td>CBOE Crude Oil Volatility (OVX)</td><td>60.02</td><td class="percentile-cell" style="background: #ffa600;">58.3</td><td class="percentile-cell" style="background: #ff2700;">90.0</td><td class="percentile-cell" style="background: #ff1d00;">92.7</td><td style="color:#555; font-size:0.85em;">15.61 / 170.55 / 36.20</td></tr>
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-24 00:30</p>
+        <p class="meta">Generated: 2026-10-25 14:26</p>
 
         </div>
         <div id="tab-HO" class="tab-content">
@@ -750,7 +751,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-24 00:30</p>
+        <p class="meta">Generated: 2026-10-25 14:26</p>
 
         </div>
         <div id="tab-NG" class="tab-content">
@@ -1059,7 +1060,158 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-24 00:30</p>
+        <p class="meta">Generated: 2026-10-25 14:26</p>
+
+        </div>
+        <div id="tab-ZC" class="tab-content">
+
+        <h2>Corn Spread Percentile Analysis</h2>
+        <p>As of: <strong>2026-10-23</strong></p>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background: #33c850;"></div>
+                <span>Low (Cheap)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #ffc800;"></div>
+                <span>Mid</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #ff2700;"></div>
+                <span>High (Expensive)</span>
+            </div>
+        </div>
+
+
+        <h3>Calendar Spread Percentiles</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Spread</th>
+                    <th>Current</th>
+                    <th>1Y %ile</th>
+                    <th>5Y %ile</th>
+                    <th>10Y %ile</th>
+                    <th>All %ile</th>
+                    <th>Min / Max / Median</th>
+                    <th>Expiry/Notice</th>
+                    <th>Days</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dec26-Mar27</td>
+                    <td>14.2500</td>
+                    <td class="percentile-cell" style="background: #ff7400;">70.9</td>
+                    <td class="percentile-cell" style="background: #ff5e00;">76.5</td>
+                    <td class="percentile-cell" style="background: #ff3500;">86.6</td>
+                    <td class="percentile-cell" style="background: #ff3300;">87.1</td>
+                    <td style="color:#555; font-size:0.85em;">-159.0000 / 26.0000 / 8.7500</td>
+                    <td style="color:#555; font-size:0.9em;">30-Nov-26 <span title="First notice day" style="color:#0d6efd; font-weight:600;">N</span></td>
+                    <td style="color:#555;">38</td>
+                </tr>
+                <tr>
+                    <td>Mar-May27</td>
+                    <td>8.7500</td>
+                    <td class="percentile-cell" style="background: #ff9f00;">60.2</td>
+                    <td class="percentile-cell" style="background: #ff9800;">62.0</td>
+                    <td class="percentile-cell" style="background: #ff8000;">67.8</td>
+                    <td class="percentile-cell" style="background: #ff9800;">61.9</td>
+                    <td style="color:#555; font-size:0.85em;">-122.2500 / 22.2500 / 7.5000</td>
+                    <td style="color:#555; font-size:0.9em;">26-Feb-27 <span title="First notice day" style="color:#0d6efd; font-weight:600;">N</span></td>
+                    <td style="color:#555;">126</td>
+                </tr>
+                <tr>
+                    <td>May-Jul27</td>
+                    <td>6.5000</td>
+                    <td class="percentile-cell" style="background: #e3c80a;">44.6</td>
+                    <td class="percentile-cell" style="background: #ffac00;">57.0</td>
+                    <td class="percentile-cell" style="background: #ffc000;">51.8</td>
+                    <td class="percentile-cell" style="background: #edc806;">46.6</td>
+                    <td style="color:#555; font-size:0.85em;">-118.0000 / 17.7500 / 6.7500</td>
+                    <td style="color:#555; font-size:0.9em;">30-Apr-27 <span title="First notice day" style="color:#0d6efd; font-weight:600;">N</span></td>
+                    <td style="color:#555;">189</td>
+                </tr>
+                <tr>
+                    <td>Jul-Sep27</td>
+                    <td>-3.5000</td>
+                    <td class="percentile-cell" style="background: #69c83a;">20.7</td>
+                    <td class="percentile-cell" style="background: #93c82a;">28.9</td>
+                    <td class="percentile-cell" style="background: #6dc839;">21.5</td>
+                    <td class="percentile-cell" style="background: #64c83c;">19.7</td>
+                    <td style="color:#555; font-size:0.85em;">-92.5000 / 15.2500 / 6.2500</td>
+                    <td style="color:#555; font-size:0.9em;">30-Jun-27 <span title="First notice day" style="color:#0d6efd; font-weight:600;">N</span></td>
+                    <td style="color:#555;">250</td>
+                </tr>
+                <tr>
+                    <td>Sep-Dec27</td>
+                    <td>13.0000</td>
+                    <td class="percentile-cell" style="background: #ff2b00;">89.2</td>
+                    <td class="percentile-cell" style="background: #ff0b00;">97.2</td>
+                    <td class="percentile-cell" style="background: #ff0500;">98.6</td>
+                    <td class="percentile-cell" style="background: #ff0600;">98.4</td>
+                    <td style="color:#555; font-size:0.85em;">-120.7500 / 14.7500 / 6.2500</td>
+                    <td style="color:#555; font-size:0.9em;">31-Aug-27 <span title="First notice day" style="color:#0d6efd; font-weight:600;">N</span></td>
+                    <td style="color:#555;">312</td>
+                </tr>
+                <tr>
+                    <td>Dec27-Mar28</td>
+                    <td>13.7500</td>
+                    <td class="percentile-cell" style="background: #ff0c00;">96.8</td>
+                    <td class="percentile-cell" style="background: #ff0200;">99.4</td>
+                    <td class="percentile-cell" style="background: #ff0100;">99.7</td>
+                    <td class="percentile-cell" style="background: #ff0200;">99.3</td>
+                    <td style="color:#555; font-size:0.85em;">-77.2500 / 15.2500 / 5.2500</td>
+                    <td style="color:#555; font-size:0.9em;">30-Nov-27 <span title="First notice day" style="color:#0d6efd; font-weight:600;">N</span></td>
+                    <td style="color:#555;">403</td>
+                </tr>
+                <tr>
+                    <td>Mar-May28</td>
+                    <td>7.5000</td>
+                    <td class="percentile-cell" style="background: #ff5f00;">76.1</td>
+                    <td class="percentile-cell" style="background: #ff4600;">82.4</td>
+                    <td class="percentile-cell" style="background: #ff3e00;">84.5</td>
+                    <td class="percentile-cell" style="background: #ff3f00;">84.1</td>
+                    <td style="color:#555; font-size:0.85em;">-90.5000 / 13.0000 / 4.0000</td>
+                    <td style="color:#555; font-size:0.9em;">29-Feb-28 <span title="First notice day" style="color:#0d6efd; font-weight:600;">N</span></td>
+                    <td style="color:#555;">494</td>
+                </tr>
+                <tr>
+                    <td>May-Jul28</td>
+                    <td>3.2500</td>
+                    <td class="percentile-cell" style="background: #e9c808;">45.8</td>
+                    <td class="percentile-cell" style="background: #ffb600;">54.5</td>
+                    <td class="percentile-cell" style="background: #f7c803;">48.5</td>
+                    <td class="percentile-cell" style="background: #f2c804;">47.6</td>
+                    <td style="color:#555; font-size:0.85em;">-66.5000 / 13.2500 / 3.2500</td>
+                    <td style="color:#555; font-size:0.9em;">28-Apr-28 <span title="First notice day" style="color:#0d6efd; font-weight:600;">N</span></td>
+                    <td style="color:#555;">553</td>
+                </tr>
+                <tr>
+                    <td>Jul-Sep28</td>
+                    <td>-22.5000</td>
+                    <td class="percentile-cell" style="background: #3bc84c;">11.6</td>
+                    <td class="percentile-cell" style="background: #3dc84c;">12.0</td>
+                    <td class="percentile-cell" style="background: #26c854;">7.6</td>
+                    <td class="percentile-cell" style="background: #23c856;">7.0</td>
+                    <td style="color:#555; font-size:0.85em;">-55.7500 / 14.0000 / 2.2500</td>
+                    <td style="color:#555; font-size:0.9em;">30-Jun-28 <span title="First notice day" style="color:#0d6efd; font-weight:600;">N</span></td>
+                    <td style="color:#555;">616</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Outright Valuation &amp; Implied Volatility</h3>
+        <table>
+            <thead><tr><th>Contract</th><th>Price</th><th>1Y %ile</th><th>5Y %ile</th><th>All %ile</th><th>Min / Max / Median</th></tr></thead>
+            <tbody>
+                <tr><td>Dec26</td><td>456.00</td><td class="percentile-cell" style="background: #ff8200;">67.3</td><td class="percentile-cell" style="background: #d8c80f;">42.4</td><td class="percentile-cell" style="background: #ff8e00;">64.5</td><td style="color:#555; font-size:0.85em;">186.25 / 831.25 / 407.88</td></tr>
+            </tbody>
+        </table>
+        <p style="color:#888; font-size:0.9em;">Implied volatility: N/A — no options data available for this commodity yet.</p>
+
+        <p class="meta">Generated: 2026-10-25 14:26</p>
 
         </div>
         <div id="tab-ZS" class="tab-content">
@@ -1290,7 +1442,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-24 00:30</p>
+        <p class="meta">Generated: 2026-10-25 14:26</p>
 
         </div>
         <div id="tab-ZL" class="tab-content">
@@ -1479,7 +1631,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-24 00:30</p>
+        <p class="meta">Generated: 2026-10-25 14:26</p>
 
         </div>
         <div id="tab-CT" class="tab-content">
@@ -1699,7 +1851,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-24 00:30</p>
+        <p class="meta">Generated: 2026-10-25 14:26</p>
 
         </div>
         <div id="tab-SB" class="tab-content">
@@ -1892,7 +2044,7 @@
         </table>
         <p style="color:#888; font-size:0.9em;">Implied volatility: N/A — no options data available for this commodity yet.</p>
 
-        <p class="meta">Generated: 2026-10-24 00:30</p>
+        <p class="meta">Generated: 2026-10-25 14:26</p>
 
         </div>
         <div id="tab-ALI" class="tab-content">
@@ -2153,7 +2305,7 @@
         </table>
         <p style="color:#888; font-size:0.9em;">Implied volatility: N/A — no options data available for this commodity yet.</p>
 
-        <p class="meta">Generated: 2026-10-24 00:30</p>
+        <p class="meta">Generated: 2026-10-25 14:26</p>
 
         </div>
         <div id="tab-LE" class="tab-content">
@@ -2313,7 +2465,7 @@
         </table>
         <p style="color:#888; font-size:0.9em;">Implied volatility: N/A — no options data available for this commodity yet.</p>
 
-        <p class="meta">Generated: 2026-10-24 00:30</p>
+        <p class="meta">Generated: 2026-10-25 14:26</p>
 
         </div>
         <div id="tab-HE" class="tab-content">
@@ -2442,7 +2594,7 @@
         </table>
         <p style="color:#888; font-size:0.9em;">Implied volatility: N/A — no options data available for this commodity yet.</p>
 
-        <p class="meta">Generated: 2026-10-24 00:30</p>
+        <p class="meta">Generated: 2026-10-25 14:26</p>
 
         </div>
 
