@@ -82,18 +82,20 @@
         /* Tab styles */
         .tab-nav {
             display: flex;
-            gap: 4px;
+            flex-wrap: wrap;
+            gap: 3px;
             border-bottom: 2px solid #007bff;
             margin-bottom: 24px;
         }
         .tab-btn {
-            padding: 10px 24px;
+            padding: 6px 13px;
             cursor: pointer;
             border: 1px solid #ddd;
             border-bottom: none;
             background: #f8f9fa;
-            font-size: 1em;
-            border-radius: 6px 6px 0 0;
+            font-size: 0.82em;
+            white-space: nowrap;
+            border-radius: 5px 5px 0 0;
             color: #555;
             transition: background 0.15s;
         }
@@ -119,18 +121,18 @@
         <h1>Futures Spread Analysis</h1>
         <div class="tab-nav">
             <button class="tab-btn active" data-tab="SUMMARY" onclick="showTab('SUMMARY', this)">📋 Daily Summary</button>
-            <button class="tab-btn" data-tab="CL" onclick="showTab('CL', this)">CL — WTI Crude Oil</button>
-            <button class="tab-btn" data-tab="HO" onclick="showTab('HO', this)">HO — Heating Oil</button>
-            <button class="tab-btn" data-tab="NG" onclick="showTab('NG', this)">NG — Natural Gas</button>
-            <button class="tab-btn" data-tab="ZC" onclick="showTab('ZC', this)">ZC — Corn</button>
-            <button class="tab-btn" data-tab="ZS" onclick="showTab('ZS', this)">ZS — Soybeans</button>
-            <button class="tab-btn" data-tab="ZL" onclick="showTab('ZL', this)">ZL — Soybean Oil</button>
-            <button class="tab-btn" data-tab="CT" onclick="showTab('CT', this)">CT — Cotton No. 2</button>
-            <button class="tab-btn" data-tab="KC" onclick="showTab('KC', this)">KC — Coffee</button>
-            <button class="tab-btn" data-tab="SB" onclick="showTab('SB', this)">SB — Sugar No. 11</button>
-            <button class="tab-btn" data-tab="ALI" onclick="showTab('ALI', this)">ALI — Aluminum</button>
-            <button class="tab-btn" data-tab="LE" onclick="showTab('LE', this)">LE — Live Cattle</button>
-            <button class="tab-btn" data-tab="HE" onclick="showTab('HE', this)">HE — Lean Hogs</button>
+            <button class="tab-btn" data-tab="CL" onclick="showTab('CL', this)">Crude Oil</button>
+            <button class="tab-btn" data-tab="HO" onclick="showTab('HO', this)">Heating Oil</button>
+            <button class="tab-btn" data-tab="NG" onclick="showTab('NG', this)">Nat Gas</button>
+            <button class="tab-btn" data-tab="ZC" onclick="showTab('ZC', this)">Corn</button>
+            <button class="tab-btn" data-tab="ZS" onclick="showTab('ZS', this)">Soybeans</button>
+            <button class="tab-btn" data-tab="ZL" onclick="showTab('ZL', this)">Soybean Oil</button>
+            <button class="tab-btn" data-tab="CT" onclick="showTab('CT', this)">Cotton</button>
+            <button class="tab-btn" data-tab="KC" onclick="showTab('KC', this)">Coffee</button>
+            <button class="tab-btn" data-tab="SB" onclick="showTab('SB', this)">Sugar</button>
+            <button class="tab-btn" data-tab="ALI" onclick="showTab('ALI', this)">Aluminum</button>
+            <button class="tab-btn" data-tab="LE" onclick="showTab('LE', this)">Live Cattle</button>
+            <button class="tab-btn" data-tab="HE" onclick="showTab('HE', this)">Lean Hogs</button>
         </div>
 
         <div id="tab-SUMMARY" class="tab-content active">
@@ -563,7 +565,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-28 03:40</p>
+        <p class="meta">Generated: 2026-10-28 03:54</p>
 
         </div>
         <div id="tab-HO" class="tab-content">
@@ -752,7 +754,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-28 03:40</p>
+        <p class="meta">Generated: 2026-10-28 03:54</p>
 
         </div>
         <div id="tab-NG" class="tab-content">
@@ -1061,7 +1063,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-28 03:40</p>
+        <p class="meta">Generated: 2026-10-28 03:54</p>
 
         </div>
         <div id="tab-ZC" class="tab-content">
@@ -1212,7 +1214,7 @@
         </table>
         <p style="color:#888; font-size:0.9em;">Implied volatility: N/A — no options data available for this commodity yet.</p>
 
-        <p class="meta">Generated: 2026-10-28 03:40</p>
+        <p class="meta">Generated: 2026-10-28 03:54</p>
 
         </div>
         <div id="tab-ZS" class="tab-content">
@@ -1443,7 +1445,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-28 03:40</p>
+        <p class="meta">Generated: 2026-10-28 03:54</p>
 
         </div>
         <div id="tab-ZL" class="tab-content">
@@ -1632,7 +1634,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-28 03:40</p>
+        <p class="meta">Generated: 2026-10-28 03:54</p>
 
         </div>
         <div id="tab-CT" class="tab-content">
@@ -1852,7 +1854,7 @@
             </tbody>
         </table>
 
-        <p class="meta">Generated: 2026-10-28 03:40</p>
+        <p class="meta">Generated: 2026-10-28 03:54</p>
 
         </div>
         <div id="tab-KC" class="tab-content">
@@ -2036,7 +2038,7 @@
         </table>
         <p style="color:#888; font-size:0.9em;">Implied volatility: N/A — no options data available for this commodity yet.</p>
 
-        <p class="meta">Generated: 2026-10-28 03:40</p>
+        <p class="meta">Generated: 2026-10-28 03:54</p>
 
         </div>
         <div id="tab-SB" class="tab-content">
@@ -2229,7 +2231,7 @@
         </table>
         <p style="color:#888; font-size:0.9em;">Implied volatility: N/A — no options data available for this commodity yet.</p>
 
-        <p class="meta">Generated: 2026-10-28 03:40</p>
+        <p class="meta">Generated: 2026-10-28 03:54</p>
 
         </div>
         <div id="tab-ALI" class="tab-content">
@@ -2490,7 +2492,7 @@
         </table>
         <p style="color:#888; font-size:0.9em;">Implied volatility: N/A — no options data available for this commodity yet.</p>
 
-        <p class="meta">Generated: 2026-10-28 03:40</p>
+        <p class="meta">Generated: 2026-10-28 03:54</p>
 
         </div>
         <div id="tab-LE" class="tab-content">
@@ -2650,7 +2652,7 @@
         </table>
         <p style="color:#888; font-size:0.9em;">Implied volatility: N/A — no options data available for this commodity yet.</p>
 
-        <p class="meta">Generated: 2026-10-28 03:40</p>
+        <p class="meta">Generated: 2026-10-28 03:54</p>
 
         </div>
         <div id="tab-HE" class="tab-content">
@@ -2779,7 +2781,7 @@
         </table>
         <p style="color:#888; font-size:0.9em;">Implied volatility: N/A — no options data available for this commodity yet.</p>
 
-        <p class="meta">Generated: 2026-10-28 03:40</p>
+        <p class="meta">Generated: 2026-10-28 03:54</p>
 
         </div>
 
